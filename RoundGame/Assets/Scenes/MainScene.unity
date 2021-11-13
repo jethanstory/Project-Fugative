@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 510321789}
   - component: {fileID: 510321788}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,7 +214,7 @@ Transform:
   m_GameObject: {fileID: 510321787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.0348969, y: -0.61502314, z: 4.094084}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 19.852, y: 19.852, z: 19.852}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -574,8 +574,8 @@ MonoBehaviour:
   speed: 12
   gravity: -9.81
   jumpHeight: 3
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 510321791}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
