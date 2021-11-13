@@ -578,4 +578,4 @@ MonoBehaviour:
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
-    m_Bits: 9
+    m_Bits: 8
