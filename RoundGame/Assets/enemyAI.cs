@@ -55,11 +55,11 @@ public class enemyAI : MonoBehaviour
                     isOn = true;
                 }
 
-            else if (isOn == true)
+            /*else if (isOn == true)
             {
                 lightSource.SetActive(false);
                 isOn = false;
-            }
+            }*/
     }
 
     void attackPlease() {
