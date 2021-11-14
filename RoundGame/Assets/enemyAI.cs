@@ -16,6 +16,8 @@ public class enemyAI : MonoBehaviour
     Renderer myRenderer;
 
     public bool isOn = false;
+
+    //private Light enemyLight;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,14 +32,15 @@ public class enemyAI : MonoBehaviour
         if (fpsTargetDistance < enemyLookDistance) {
             myRenderer.material.color = Color.yellow;
             lookAtPlayer();
-
+            if (fpsTargetDistance < attackDistance) {
+                myRenderer.material.color = Color.red;
+                attackPlease();
+            }
         }
-        if (fpsTargetDistance < attackDistance) {
-            myRenderer.material.color = Color.red;
-            attackPlease();
-        }
+        
         else{
             myRenderer.material.color = Color.blue;
+            //enemyLight.color = Color.white;
             if (isOn == true)
                 {
                     lightSource.SetActive(false);
@@ -64,6 +67,7 @@ public class enemyAI : MonoBehaviour
 
     void attackPlease() {
         theRigidBody.AddForce(transform.forward * enemyMovementSpeed);
+        //enemyLight.color = Color.red;
         //lightSource.SetActive(true);
     }
 }

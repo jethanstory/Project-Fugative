@@ -1312,10 +1312,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd95931056a84fe49852dec53a281e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fpsTargetDistance: 20
+  fpsTargetDistance: 30
   enemyLookDistance: 20
   attackDistance: 15
-  enemyMovementSpeed: 6
+  enemyMovementSpeed: 10
   damping: 5
   lightSource: {fileID: 1725518432}
   fpsTarget: {fileID: 1494901806}
