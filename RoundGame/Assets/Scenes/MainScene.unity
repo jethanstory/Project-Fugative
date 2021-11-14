@@ -1316,7 +1316,7 @@ MonoBehaviour:
   enemyLookDistance: 20
   attackDistance: 15
   enemyMovementSpeed: 10
-  damping: 5
+  damping: 3
   lightSource: {fileID: 1725518432}
   fpsTarget: {fileID: 1494901806}
   isOn: 1
