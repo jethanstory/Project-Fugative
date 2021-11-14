@@ -9,9 +9,13 @@ public class enemyAI : MonoBehaviour
     public float attackDistance;
     public float enemyMovementSpeed;
     public float damping;
+
+    public GameObject lightSource;
     public Transform fpsTarget;
     Rigidbody theRigidBody;
     Renderer myRenderer;
+
+    public bool isOn = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,15 +38,32 @@ public class enemyAI : MonoBehaviour
         }
         else{
             myRenderer.material.color = Color.blue;
+            if (isOn == true)
+                {
+                    lightSource.SetActive(false);
+                    isOn = false;
+                }
         }
     }
 
     void lookAtPlayer() {
         Quaternion rotation = Quaternion.LookRotation(fpsTarget.position - transform.position);
         transform.rotation = Quaternion.Slerp (transform.rotation, rotation, Time.deltaTime * damping);
+         if (isOn == false)
+                {
+                    lightSource.SetActive(true);
+                    isOn = true;
+                }
+
+            else if (isOn == true)
+            {
+                lightSource.SetActive(false);
+                isOn = false;
+            }
     }
 
     void attackPlease() {
         theRigidBody.AddForce(transform.forward * enemyMovementSpeed);
+        //lightSource.SetActive(true);
     }
 }
