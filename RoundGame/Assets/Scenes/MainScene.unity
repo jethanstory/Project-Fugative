@@ -175,7 +175,7 @@ MonoBehaviour:
   fpsTargetDistance: 30
   enemyLookDistance: 20
   attackDistance: 15
-  enemyMovementSpeed: 10
+  enemyMovementSpeed: 30
   damping: 3
   lightSource: {fileID: 732064861}
   fpsTarget: {fileID: 1494901806}
@@ -1794,7 +1794,7 @@ MonoBehaviour:
   fpsTargetDistance: 30
   enemyLookDistance: 20
   attackDistance: 15
-  enemyMovementSpeed: 10
+  enemyMovementSpeed: 30
   damping: 3
   lightSource: {fileID: 1725518432}
   fpsTarget: {fileID: 1494901806}
