@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7087085026500446109}
   - component: {fileID: 2711031215112736274}
   - component: {fileID: 8553246645465054629}
-  - component: {fileID: 1991625389793217196}
+  - component: {fileID: 1443545501}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -93,8 +93,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1991625389793217196
-MeshCollider:
+--- !u!65 &1443545501
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103,10 +103,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6291507874472269695}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 12.58187, z: 1}
+  m_Center: {x: 0, y: 6.3116565, z: 0}
 --- !u!43 &-6291507874472269695
 Mesh:
   m_ObjectHideFlags: 0
@@ -334,7 +333,7 @@ MonoBehaviour:
   m_Name: Tree Data
   m_EditorClassIdentifier: 
   _uniqueID: 1446
-  materialHash: db8d6504a8f8340f98e9339044f28f5f215482368
+  materialHash: 3668bd6292c12287764ef177e3137ac1215482368
   root:
     _uniqueID: 1
     seed: 1234

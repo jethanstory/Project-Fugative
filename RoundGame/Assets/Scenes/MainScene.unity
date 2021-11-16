@@ -476,6 +476,7 @@ GameObject:
   - component: {fileID: 637204166}
   - component: {fileID: 637204165}
   - component: {fileID: 637204164}
+  - component: {fileID: 637204167}
   m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
@@ -541,6 +542,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &637204167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637204163}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &732064861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,24 +2000,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1443545496 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7728424800939262986, guid: 46c2be10d00795d478fceeb64067f8a3, type: 3}
-  m_PrefabInstance: {fileID: 755513288835956939}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1443545501
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443545496}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 12.58187, z: 1}
-  m_Center: {x: 0, y: 6.3116565, z: 0}
 --- !u!1 &1494901804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,7 +2477,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 74b23d8dd043ada448045874c0e6fdd9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2581,6 +2577,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptimizedTree
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1991625389793217196, guid: 46c2be10d00795d478fceeb64067f8a3, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46c2be10d00795d478fceeb64067f8a3, type: 3}
