@@ -8,7 +8,7 @@ public class PlayerCollision : MonoBehaviour
     // Start is called before the first frame update
     void OnCollisionEnter (UnityEngine.Collision collisionInfo) 
     {
-        if (collisionInfo.collider.name == "Enemy")
+        if (collisionInfo.collider.name == "Enemy" || collisionInfo.collider.name == "WanderingEnemy" || collisionInfo.collider.name == "flyingEnemy" )
         {
             Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene(1);
