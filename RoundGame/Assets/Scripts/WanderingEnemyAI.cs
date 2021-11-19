@@ -1,3 +1,5 @@
+//Used for wandering enemy with flashlight (The key difference between this and the enemyAI script is the flashlight toggle)
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +15,7 @@ public class WanderingEnemyAI : MonoBehaviour
     public GameObject lightSource;
     public Transform fpsTarget;
     Rigidbody theRigidBody;
-    Renderer myRenderer;
+    //Renderer myRenderer;
 
     
 
@@ -21,7 +23,7 @@ public class WanderingEnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       myRenderer = GetComponent<Renderer>();
+       //myRenderer = GetComponent<Renderer>();
        theRigidBody = GetComponent<Rigidbody>();
     }
 
@@ -30,16 +32,16 @@ public class WanderingEnemyAI : MonoBehaviour
     {
         fpsTargetDistance = Vector3.Distance(fpsTarget.position, transform.position);
         if (fpsTargetDistance < enemyLookDistance) {
-            myRenderer.material.color = Color.yellow;
+            //myRenderer.material.color = Color.yellow;
             lookAtPlayer();
             if (fpsTargetDistance < attackDistance) {
-                myRenderer.material.color = Color.red;
+                //myRenderer.material.color = Color.red;
                 attackPlease();
             }
         }
         
         else{
-            myRenderer.material.color = Color.blue;
+            //myRenderer.material.color = Color.blue;
             //enemyLight.color = Color.white;
           
         }
