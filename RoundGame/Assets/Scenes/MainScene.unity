@@ -1092,18 +1092,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!122 &822861805
-Halo:
+--- !u!114 &822861805
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822861804}
   m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4281335788
-  m_Size: 5
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403b3c02b36648e48b218575ede2059d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFlickering: 1
+  FlickerMode: 3
+  FlickerTime: 0
+  lightSource: {fileID: 983712556}
+  light: {fileID: 983712558}
+  RandomIntensity: 0
 --- !u!135 &822861806
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1467,6 +1473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 983712557}
   - component: {fileID: 983712558}
+  - component: {fileID: 983712559}
   m_Layer: 0
   m_Name: Area Light
   m_TagString: Untagged
@@ -1482,7 +1489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983712556}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822861809}
@@ -1550,6 +1557,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!122 &983712559
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983712556}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4281335788
+  m_Size: 5
 --- !u!1 &984889604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,7 +2088,6 @@ GameObject:
   - component: {fileID: 1190767598}
   - component: {fileID: 1190767597}
   - component: {fileID: 1190767596}
-  - component: {fileID: 1190767601}
   m_Layer: 0
   m_Name: The Edge
   m_TagString: Untagged
@@ -2154,22 +2172,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1190767601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190767595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 403b3c02b36648e48b218575ede2059d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFlickering: 1
-  Flickermode: 1
-  FlickerTime: 0.1
-  lightSource: {fileID: 983712556}
 --- !u!1 &1243584702
 GameObject:
   m_ObjectHideFlags: 0
