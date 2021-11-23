@@ -1656,6 +1656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1001721392}
   - component: {fileID: 1001721391}
+  - component: {fileID: 1001721393}
   m_Layer: 0
   m_Name: Area Light
   m_TagString: Untagged
@@ -1739,6 +1740,18 @@ Transform:
   m_Father: {fileID: 1190767599}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!122 &1001721393
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001721390}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4281335788
+  m_Size: 5
 --- !u!1 &1010740767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,7 +2069,7 @@ GameObject:
   - component: {fileID: 1190767598}
   - component: {fileID: 1190767597}
   - component: {fileID: 1190767596}
-  - component: {fileID: 1190767600}
+  - component: {fileID: 1190767601}
   m_Layer: 0
   m_Name: The Edge
   m_TagString: Untagged
@@ -2141,18 +2154,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!122 &1190767600
-Halo:
+--- !u!114 &1190767601
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190767595}
   m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4281335788
-  m_Size: 5
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403b3c02b36648e48b218575ede2059d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFlickering: 1
+  Flickermode: 1
+  FlickerTime: 0.1
+  lightSource: {fileID: 983712556}
 --- !u!1 &1243584702
 GameObject:
   m_ObjectHideFlags: 0

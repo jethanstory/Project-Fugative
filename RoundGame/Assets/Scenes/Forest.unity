@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.075561725, g: 0.062983125, b: 0.035349857, a: 1}
+  m_IndirectSpecularColor: {r: 0.075561814, g: 0.06298316, b: 0.03534983, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1018,6 +1018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 789131256}
   - component: {fileID: 789131257}
+  - component: {fileID: 789131258}
   m_Layer: 0
   m_Name: Area Light
   m_TagString: Untagged
@@ -1101,6 +1102,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!122 &789131258
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789131255}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4281335788
+  m_Size: 5
 --- !u!1 &804286338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,7 +1221,6 @@ GameObject:
   - component: {fileID: 829097273}
   - component: {fileID: 829097272}
   - component: {fileID: 829097271}
-  - component: {fileID: 829097270}
   m_Layer: 0
   m_Name: The Edge
   m_TagString: Untagged
@@ -1216,18 +1228,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!122 &829097270
-Halo:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829097269}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4281335788
-  m_Size: 5
 --- !u!135 &829097271
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1569,7 +1569,6 @@ GameObject:
   - component: {fileID: 1208037741}
   - component: {fileID: 1208037740}
   - component: {fileID: 1208037739}
-  - component: {fileID: 1208037738}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
@@ -1577,18 +1576,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!122 &1208037738
-Halo:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208037737}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4281335788
-  m_Size: 5
 --- !u!135 &1208037739
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2203,6 +2190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1806829886}
   - component: {fileID: 1806829887}
+  - component: {fileID: 1806829888}
   m_Layer: 0
   m_Name: Area Light
   m_TagString: Untagged
@@ -2286,6 +2274,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!122 &1806829888
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806829885}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4281335788
+  m_Size: 5
 --- !u!1 &1824191989
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,7 +2609,6 @@ GameObject:
   - component: {fileID: 1978241705}
   - component: {fileID: 1978241704}
   - component: {fileID: 1978241703}
-  - component: {fileID: 1978241702}
   m_Layer: 0
   m_Name: Lamp 2
   m_TagString: Untagged
@@ -2617,18 +2616,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!122 &1978241702
-Halo:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978241701}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4281335788
-  m_Size: 5
 --- !u!135 &1978241703
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2853,6 +2840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2070210070}
   - component: {fileID: 2070210071}
+  - component: {fileID: 2070210072}
   m_Layer: 0
   m_Name: Area Light
   m_TagString: Untagged
@@ -2936,3 +2924,15 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!122 &2070210072
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070210069}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4281335788
+  m_Size: 5
