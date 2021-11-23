@@ -919,6 +919,7 @@ GameObject:
   - component: {fileID: 775212498}
   - component: {fileID: 775212497}
   - component: {fileID: 775212500}
+  - component: {fileID: 775212501}
   m_Layer: 0
   m_Name: First Person Player
   m_TagString: Untagged
@@ -1008,6 +1009,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c66760b369b7c42a5e192b312b9941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &775212501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775212495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf89543327eeff4e93f59bb933e1b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsTargetDistance: 30
+  enemyLookDistance: 20
+  attackDistance: 30
+  enemyMovementSpeed: 10
+  damping: 5
+  fpsTarget: {fileID: 2013733235}
+  isFlickering: 1
+  FlickerMode: 1
+  FlickerTime: 0
+  lightSource: {fileID: 1579166079}
+  light: {fileID: 1579166081}
+  RandomIntensity: 0
 --- !u!1 &789131255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,7 +1609,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208037737}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403b3c02b36648e48b218575ede2059d, type: 3}
   m_Name: 
