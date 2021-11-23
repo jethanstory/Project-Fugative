@@ -12,6 +12,10 @@ public class flickeringLamps : MonoBehaviour
     public float damping;
 
     public Transform fpsTarget;
+
+    public Transform fpsTarget2;
+
+    public Transform fpsTarget3;
     public bool isFlickering;
     public int FlickerMode;
     public float FlickerTime;
