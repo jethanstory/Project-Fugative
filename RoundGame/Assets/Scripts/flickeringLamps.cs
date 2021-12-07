@@ -1,3 +1,4 @@
+//FPS player light flickering mechanic
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

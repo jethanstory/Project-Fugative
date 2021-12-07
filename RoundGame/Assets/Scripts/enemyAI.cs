@@ -1,3 +1,4 @@
+//Sationary enemy AI for simple look and attack mechanics
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
