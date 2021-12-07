@@ -6,6 +6,7 @@ public class flickeringLamps : MonoBehaviour
 {
 
     public float fpsTargetDistance;
+    public float fpsTargetWanderingDistance;
     public float enemyLookDistance;
     public float attackDistance;
     public float enemyMovementSpeed;
@@ -15,7 +16,7 @@ public class flickeringLamps : MonoBehaviour
 
     public Transform fpsTarget2;
 
-    public Transform fpsTarget3;
+    //public Transform fpsTarget3;
     public bool isFlickering;
     public int FlickerMode;
     public float FlickerTime;
@@ -40,6 +41,11 @@ public class flickeringLamps : MonoBehaviour
     {
         fpsTargetDistance = Vector3.Distance(fpsTarget.position, transform.position);
         if (fpsTargetDistance < enemyLookDistance) {
+            isFlickering = true;
+            StartCoroutine(FlickerLight());
+        }
+        fpsTargetWanderingDistance = Vector3.Distance(fpsTarget2.position, transform.position);
+        if (fpsTargetWanderingDistance < enemyLookDistance) {
             isFlickering = true;
             StartCoroutine(FlickerLight());
         }
