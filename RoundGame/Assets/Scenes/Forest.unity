@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fpsTargetDistance: 30
-  fpsTargetWanderingDistance: 0
+  fpsTargetWanderingDistance: 30
   enemyLookDistance: 20
   attackDistance: 30
   enemyMovementSpeed: 10
