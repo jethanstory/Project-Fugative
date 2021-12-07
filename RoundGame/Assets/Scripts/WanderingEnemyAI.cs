@@ -1,4 +1,5 @@
 //Used for wandering enemy with flashlight (The key difference between this and the enemyAI script is the flashlight toggle)
+//and the color change on FPSTarget pickup
 
 using System.Collections;
 using System.Collections.Generic;
