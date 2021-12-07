@@ -2362,7 +2362,7 @@ GameObject:
   - component: {fileID: 1733265062}
   - component: {fileID: 1733265061}
   - component: {fileID: 1733265060}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FlatPath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
