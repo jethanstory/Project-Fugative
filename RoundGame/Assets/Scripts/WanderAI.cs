@@ -67,4 +67,6 @@ public class WanderAI : MonoBehaviour
             isRotatingLeft = false;
         }
     }
+
+    
 }
