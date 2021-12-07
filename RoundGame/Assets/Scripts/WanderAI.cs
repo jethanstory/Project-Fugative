@@ -11,6 +11,10 @@ public class WanderAI : MonoBehaviour
     private bool isRotatingRight = false;
     private bool isWalking = false;
 
+    public float damping;
+
+    public Transform fpsTarget;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +60,7 @@ public class WanderAI : MonoBehaviour
         yield return new WaitForSeconds(rotateWait);
         if(rotateLorR == 1)
         {
+            
             isRotatingRight = true;
             yield return new WaitForSeconds(rotTime);
             isRotatingRight = false;

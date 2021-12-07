@@ -2539,6 +2539,7 @@ MonoBehaviour:
   damping: 3
   lightSource: {fileID: 1502558218}
   fpsTarget: {fileID: 775212496}
+  fpsWanderTarget: {fileID: 829097274}
 --- !u!114 &1907298978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2553,6 +2554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   rotSpeed: 100
+  damping: 5
+  fpsTarget: {fileID: 1208037742}
 --- !u!54 &1907298979
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class WanderingEnemyAI : MonoBehaviour
 
     public GameObject lightSource;
     public Transform fpsTarget;
+    public Transform fpsWanderTarget;
     Rigidbody theRigidBody;
     //Renderer myRenderer;
 
@@ -42,6 +43,9 @@ public class WanderingEnemyAI : MonoBehaviour
         }
         
         else{
+
+            //WandertoPlacePlease();
+
             //myRenderer.material.color = Color.blue;
             //enemyLight.color = Color.white;
           
@@ -64,6 +68,13 @@ public class WanderingEnemyAI : MonoBehaviour
         theRigidBody.AddForce(transform.forward * enemyMovementSpeed);
         //enemyLight.color = Color.red;
         //lightSource.SetActive(true);
+    }
+    void WandertoPlacePlease() {
+        //Wander to location specified
+        Quaternion rotation = Quaternion.LookRotation(fpsWanderTarget.position - transform.position);
+        //Go to player position (useful for testing)
+        //Quaternion rotation = Quaternion.LookRotation(fpsTarget.position - transform.position);
+        transform.rotation = Quaternion.Slerp (transform.rotation, rotation, Time.deltaTime * damping);
     }
 }
 

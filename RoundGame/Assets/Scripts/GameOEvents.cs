@@ -16,4 +16,9 @@ public class GameOEvents : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void StartGame() 
+    {
+        SceneManager.LoadScene("Forest");
+    }
 }
