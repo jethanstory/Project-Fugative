@@ -935,7 +935,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LICHEN
+  m_Text: 'LICHEN (or we simply don''t know why, we simply don''t know how) all we
+    know is that they will not stop. '
 --- !u!222 &1341227223
 CanvasRenderer:
   m_ObjectHideFlags: 0
