@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11988706, g: 0.12781087, b: 0.13002008, a: 1}
+  m_IndirectSpecularColor: {r: 0.119887255, g: 0.12781122, b: 0.13002029, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -157,6 +157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   rotSpeed: 100
+  damping: 0
+  fpsTarget: {fileID: 0}
 --- !u!136 &288925695
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1230,6 +1232,7 @@ MonoBehaviour:
   damping: 3
   lightSource: {fileID: 1405604091}
   fpsTarget: {fileID: 1494901806}
+  fpsWanderTarget: {fileID: 0}
 --- !u!114 &849508646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1244,6 +1247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   rotSpeed: 100
+  damping: 0
+  fpsTarget: {fileID: 0}
 --- !u!54 &849508647
 Rigidbody:
   m_ObjectHideFlags: 0
