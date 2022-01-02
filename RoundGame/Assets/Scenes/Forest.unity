@@ -365,7 +365,7 @@ MonoBehaviour:
   enemyLookDistance: 20
   attackDistance: 15
   enemyMovementSpeed: 100
-  damping: 10
+  damping: 50
   fpsTarget: {fileID: 775212496}
   isOn: 0
 --- !u!54 &66386418
@@ -1166,6 +1166,7 @@ MonoBehaviour:
   fpsTarget: {fileID: 2013733235}
   fpsTarget2: {fileID: 1907298983}
   fpsTarget3: {fileID: 449290860}
+  fpsTarget4: {fileID: 66386422}
   isFlickering: 1
   FlickerMode: 1
   FlickerTime: 0
