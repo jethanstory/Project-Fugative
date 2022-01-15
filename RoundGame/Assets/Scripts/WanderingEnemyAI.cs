@@ -35,7 +35,9 @@ public class WanderingEnemyAI : MonoBehaviour
         fpsTargetDistance = Vector3.Distance(fpsTarget.position, transform.position);
         if (fpsTargetDistance < enemyLookDistance) {
             //myRenderer.material.color = Color.yellow;
+            GetComponent<AdvancedWanderAI>().enabled = false;
             lookAtPlayer();
+            
             if (fpsTargetDistance < attackDistance) {
                 //myRenderer.material.color = Color.red;
                 attackPlease();
