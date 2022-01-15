@@ -252,6 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 0}
+  fpsTarget: {fileID: 0}
   speed: 3
   walkRadius: 5
 --- !u!195 &288925700
@@ -1431,6 +1432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 849508653}
+  fpsTarget: {fileID: 0}
   speed: 3
   walkRadius: 200
 --- !u!195 &849508653
