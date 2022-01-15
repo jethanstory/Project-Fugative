@@ -1159,7 +1159,10 @@ MonoBehaviour:
   fpsTargetFlyingDistance: 30
   fpsTargetLongDistance: 0
   fpsTargetWatchDistance: 0
-  enemyLookDistance: 15
+  enemyLookDistance: 20
+  enemyLookDistance2: 15
+  enemyLookDistance3: 20
+  enemyLookDistance4: 20
   attackDistance: 30
   enemyMovementSpeed: 10
   damping: 5

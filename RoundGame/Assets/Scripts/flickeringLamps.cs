@@ -15,6 +15,9 @@ public class flickeringLamps : MonoBehaviour
 
     public float fpsTargetWatchDistance;
     public float enemyLookDistance;
+    public float enemyLookDistance2;
+    public float enemyLookDistance3;
+    public float enemyLookDistance4;
     public float attackDistance;
     public float enemyMovementSpeed;
     public float damping;
@@ -56,17 +59,17 @@ public class flickeringLamps : MonoBehaviour
             StartCoroutine(FlickerLight());
         }
         fpsTargetWanderingDistance = Vector3.Distance(fpsTarget2.position, transform.position);
-        if (fpsTargetWanderingDistance < enemyLookDistance) {
+        if (fpsTargetWanderingDistance < enemyLookDistance2) {
             isFlickering = true;
             StartCoroutine(FlickerLight());
         }
         fpsTargetFlyingDistance = Vector3.Distance(fpsTarget3.position, transform.position);
-        if (fpsTargetFlyingDistance < enemyLookDistance) {
+        if (fpsTargetFlyingDistance < enemyLookDistance3) {
             isFlickering = true;
             StartCoroutine(FlickerLight());
         }
         fpsTargetLongDistance = Vector3.Distance(fpsTarget4.position, transform.position);
-        if (fpsTargetLongDistance < enemyLookDistance) {
+        if (fpsTargetLongDistance < enemyLookDistance4) {
             isFlickering = true;
             StartCoroutine(FlickerLight());
         }
