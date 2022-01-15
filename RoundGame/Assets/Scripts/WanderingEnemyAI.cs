@@ -4,6 +4,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WanderingEnemyAI : MonoBehaviour
 {
@@ -35,7 +36,10 @@ public class WanderingEnemyAI : MonoBehaviour
         fpsTargetDistance = Vector3.Distance(fpsTarget.position, transform.position);
         if (fpsTargetDistance < enemyLookDistance) {
             //myRenderer.material.color = Color.yellow;
-            GetComponent<AdvancedWanderAI>().enabled = false;
+
+            //Disables the Advanced Wander AI script and the NavMeshAgent script so the enemy stops when you are in range. 
+            GameObject.Find("WanderingEnemy").GetComponent<AdvancedWanderAI>().enabled = false;
+            gameObject.GetComponent<NavMeshAgent>().enabled = false;
             lookAtPlayer();
             
             if (fpsTargetDistance < attackDistance) {
@@ -46,6 +50,8 @@ public class WanderingEnemyAI : MonoBehaviour
         
         else{
 
+            GameObject.Find("WanderingEnemy").GetComponent<AdvancedWanderAI>().enabled = true;
+            gameObject.GetComponent<NavMeshAgent>().enabled = true;
             //WandertoPlacePlease();
 
             //myRenderer.material.color = Color.blue;
