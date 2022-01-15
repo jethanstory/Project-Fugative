@@ -1159,7 +1159,7 @@ MonoBehaviour:
   fpsTargetFlyingDistance: 30
   fpsTargetLongDistance: 0
   fpsTargetWatchDistance: 0
-  enemyLookDistance: 20
+  enemyLookDistance: 15
   attackDistance: 30
   enemyMovementSpeed: 10
   damping: 5
@@ -2669,8 +2669,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fpsTargetDistance: 30
-  enemyLookDistance: 20
-  attackDistance: 15
+  enemyLookDistance: 15
+  attackDistance: 13
   enemyMovementSpeed: 100
   damping: 50
   lightSource: {fileID: 1502558218}
