@@ -39,7 +39,8 @@ public class WanderingEnemyAI : MonoBehaviour
 
             //Disables the Advanced Wander AI script and the NavMeshAgent script so the enemy stops when you are in range. 
             GameObject.Find("WanderingEnemy").GetComponent<AdvancedWanderAI>().enabled = false;
-            gameObject.GetComponent<NavMeshAgent>().enabled = false;
+            GameObject.Find("WanderingEnemy").GetComponent<FollowingEnemy>().enabled = true;
+            //gameObject.GetComponent<NavMeshAgent>().enabled = false;
             lookAtPlayer();
             
             if (fpsTargetDistance < attackDistance) {

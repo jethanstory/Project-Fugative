@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.075561784, g: 0.06298314, b: 0.03534986, a: 1}
+  m_IndirectSpecularColor: {r: 0.075561814, g: 0.06298316, b: 0.03534983, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1208,10 +1208,10 @@ MonoBehaviour:
   attackDistance: 30
   enemyMovementSpeed: 10
   damping: 5
-  fpsTarget: {fileID: 2013733235}
-  fpsTarget2: {fileID: 1907298983}
-  fpsTarget3: {fileID: 449290860}
-  fpsTarget4: {fileID: 66386422}
+  fpsTarget: {fileID: 66386422}
+  fpsTarget2: {fileID: 0}
+  fpsTarget3: {fileID: 0}
+  fpsTarget4: {fileID: 0}
   isFlickering: 1
   FlickerMode: 1
   FlickerTime: 0
@@ -2694,6 +2694,7 @@ GameObject:
   - component: {fileID: 1907298977}
   - component: {fileID: 1907298984}
   - component: {fileID: 1907298985}
+  - component: {fileID: 1907298986}
   m_Layer: 0
   m_Name: WanderingEnemy
   m_TagString: Untagged
@@ -2869,6 +2870,24 @@ MonoBehaviour:
   fpsTarget: {fileID: 0}
   speed: 3
   walkRadius: 200
+--- !u!114 &1907298986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907298976}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32db01a59c2ee9c45826e34279f73c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damping: 0
+  agent: {fileID: 1907298984}
+  fpsTarget: {fileID: 0}
+  player: {fileID: 775212496}
+  speed: 10
+  walkRadius: 100
 --- !u!1 &1978241701
 GameObject:
   m_ObjectHideFlags: 0
