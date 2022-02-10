@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 414640240}
   - component: {fileID: 414640242}
   - component: {fileID: 414640241}
+  - component: {fileID: 414640243}
   m_Layer: 0
   m_Name: watcherEnemy
   m_TagString: Untagged
@@ -388,7 +389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414640233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 430.06, y: 1.681, z: 391.46}
+  m_LocalPosition: {x: 374.41, y: 1.681, z: 391.46}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1973098415}
@@ -454,7 +455,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414640233}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32db01a59c2ee9c45826e34279f73c33, type: 3}
   m_Name: 
@@ -487,6 +488,24 @@ NavMeshAgent:
   m_BaseOffset: 0.546848
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &414640243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414640233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d588e607f4fcbad49a3c366c38ff6b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damping: 0
+  agent: {fileID: 849508653}
+  fpsTarget: {fileID: 0}
+  player: {fileID: 1494901806}
+  speed: 50
+  walkRadius: 100
 --- !u!1 &455418230
 GameObject:
   m_ObjectHideFlags: 0
