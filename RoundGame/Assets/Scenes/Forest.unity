@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.075561784, g: 0.06298314, b: 0.03534986, a: 1}
+  m_IndirectSpecularColor: {r: 0.075561814, g: 0.06298316, b: 0.03534983, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3129,12 +3129,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d588e607f4fcbad49a3c366c38ff6b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damping: 0
+  damping: 50
   agent: {fileID: 1907298984}
   fpsTarget: {fileID: 0}
   player: {fileID: 775212496}
-  speed: 50
-  walkRadius: 100
+  speed: 100
+  walkRadius: 500
 --- !u!1 &1978241701
 GameObject:
   m_ObjectHideFlags: 0

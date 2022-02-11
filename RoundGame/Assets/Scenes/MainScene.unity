@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damping: 0
-  agent: {fileID: 849508653}
+  agent: {fileID: 414640242}
   fpsTarget: {fileID: 0}
   player: {fileID: 1494901806}
   speed: 50
@@ -1343,6 +1343,7 @@ GameObject:
   - component: {fileID: 849508645}
   - component: {fileID: 849508653}
   - component: {fileID: 849508652}
+  - component: {fileID: 849508654}
   m_Layer: 0
   m_Name: WanderingEnemy
   m_TagString: Untagged
@@ -1369,7 +1370,7 @@ MonoBehaviour:
   damping: 50
   lightSource: {fileID: 1405604091}
   fpsTarget: {fileID: 1494901806}
-  fpsWanderTarget: {fileID: 0}
+  fpsWanderTarget: {fileID: 1190767599}
 --- !u!114 &849508646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,6 +1519,24 @@ NavMeshAgent:
   m_BaseOffset: 21
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &849508654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849508644}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32db01a59c2ee9c45826e34279f73c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damping: 0
+  agent: {fileID: 849508653}
+  fpsTarget: {fileID: 0}
+  player: {fileID: 1494901806}
+  speed: 50
+  walkRadius: 100
 --- !u!1 &916067783
 GameObject:
   m_ObjectHideFlags: 0
