@@ -55,6 +55,7 @@ public class WanderingEnemyAI : MonoBehaviour
             
             GameObject.Find("WanderingEnemy").GetComponent<AdvancedWanderAI>().enabled = true;
             gameObject.GetComponent<NavMeshAgent>().enabled = true;
+            //Wander to player position
             //WandertoPlacePlease();
 
             //myRenderer.material.color = Color.blue;
