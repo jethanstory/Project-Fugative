@@ -1349,21 +1349,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fpsTargetDistance: 30
-  fpsTargetWanderingDistance: 30
-  fpsTargetFlyingDistance: 30
-  fpsTargetLongDistance: 0
-  fpsTargetWatchDistance: 0
   enemyLookDistance: 20
-  enemyLookDistance2: 15
-  enemyLookDistance3: 20
-  enemyLookDistance4: 20
-  attackDistance: 30
-  enemyMovementSpeed: 10
   damping: 5
   fpsTarget: {fileID: 66386422}
-  fpsTarget2: {fileID: 0}
-  fpsTarget3: {fileID: 0}
-  fpsTarget4: {fileID: 0}
   isFlickering: 1
   FlickerMode: 1
   FlickerTime: 0
