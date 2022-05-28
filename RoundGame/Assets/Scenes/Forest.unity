@@ -564,7 +564,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66386416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.205589
   m_Speed: 3.5
@@ -3065,7 +3065,7 @@ NavMeshAgent:
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 25
   m_BaseOffset: 21
@@ -3117,12 +3117,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d588e607f4fcbad49a3c366c38ff6b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damping: 100
+  damping: 0
   agent: {fileID: 1907298984}
   fpsTarget: {fileID: 0}
   player: {fileID: 775212496}
-  speed: 100
+  speed: 500
   walkRadius: 1
+  acceleration: 500
 --- !u!1 &1978241701
 GameObject:
   m_ObjectHideFlags: 0
