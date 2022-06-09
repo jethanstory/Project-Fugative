@@ -420,6 +420,8 @@ GameObject:
   - component: {fileID: 66386417}
   - component: {fileID: 66386424}
   - component: {fileID: 66386423}
+  - component: {fileID: 66386425}
+  - component: {fileID: 66386426}
   m_Layer: 0
   m_Name: longOne
   m_TagString: Untagged
@@ -564,7 +566,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66386416}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.205589
   m_Speed: 3.5
@@ -579,6 +581,41 @@ NavMeshAgent:
   m_BaseOffset: 0.9
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &66386425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66386416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2cb7e5e761d354aa4f8af1a32c949d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 66386424}
+  fpsTarget: {fileID: 0}
+  speed: 10
+  walkRadius: 100
+--- !u!114 &66386426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66386416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d588e607f4fcbad49a3c366c38ff6b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damping: 0
+  agent: {fileID: 66386424}
+  fpsTarget: {fileID: 0}
+  player: {fileID: 775212496}
+  speed: 500
+  walkRadius: 1
+  acceleration: 500
 --- !u!1 &95515859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,6 +2976,7 @@ MonoBehaviour:
   lightSource: {fileID: 1502558218}
   fpsTarget: {fileID: 775212496}
   fpsWanderTarget: {fileID: 829097274}
+  lights: []
 --- !u!114 &1907298978
 MonoBehaviour:
   m_ObjectHideFlags: 0
