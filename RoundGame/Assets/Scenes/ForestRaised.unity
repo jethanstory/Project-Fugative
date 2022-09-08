@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -515,21 +515,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fpsTargetDistance: 30
-  fpsTargetWanderingDistance: 30
-  fpsTargetFlyingDistance: 30
-  fpsTargetLongDistance: 0
-  fpsTargetWatchDistance: 0
   enemyLookDistance: 20
-  enemyLookDistance2: 0
-  enemyLookDistance3: 0
-  enemyLookDistance4: 0
-  attackDistance: 30
-  enemyMovementSpeed: 10
   damping: 5
   fpsTarget: {fileID: 1648023049}
-  fpsTarget2: {fileID: 2033086975}
-  fpsTarget3: {fileID: 1658116072}
-  fpsTarget4: {fileID: 0}
   isFlickering: 1
   FlickerMode: 1
   FlickerTime: 0
@@ -3157,6 +3145,7 @@ MonoBehaviour:
   lightSource: {fileID: 1543107630}
   fpsTarget: {fileID: 374967620}
   fpsWanderTarget: {fileID: 0}
+  lights: []
 --- !u!114 &2033086970
 MonoBehaviour:
   m_ObjectHideFlags: 0
