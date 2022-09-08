@@ -1,2 +1,2 @@
-# RoundGameTest
-A test FPS made in Unity
+# Project Fugative
+A Unity 3D game project about being on the run from the cops and an ancient monster in the woods. 
