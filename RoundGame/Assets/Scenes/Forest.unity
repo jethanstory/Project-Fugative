@@ -1886,7 +1886,7 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: bf2b46f482263d6498b5f1948ea6751b, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
+  m_TreeBillboardDistance: 1000
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
@@ -2441,7 +2441,7 @@ MonoBehaviour:
   controller: {fileID: 775212499}
   speed: 12
   gravity: -9.81
-  jumpHeight: 3
+  jumpHeight: 1
   groundCheck: {fileID: 1406720110}
   groundDistance: 0.4
   groundMask:
