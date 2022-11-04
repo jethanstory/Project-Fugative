@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 6acad542b287f884ba0c7fec4da37a3a, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 13259453ca5461045b32dfd04c67ed2c, type: 2}
 --- !u!1 &2422979
 GameObject:
   m_ObjectHideFlags: 0
@@ -3109,8 +3109,8 @@ GameObject:
   m_Name: 03.wheel_br (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1078867952
 Transform:
@@ -4160,13 +4160,53 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1006115552044542, guid: f54396fab917bc949b664f13196045d9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006115552044542, guid: f54396fab917bc949b664f13196045d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163328274325220, guid: f54396fab917bc949b664f13196045d9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163328274325220, guid: f54396fab917bc949b664f13196045d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1260544448619568, guid: f54396fab917bc949b664f13196045d9, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1260544448619568, guid: f54396fab917bc949b664f13196045d9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260544448619568, guid: f54396fab917bc949b664f13196045d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552246621904572, guid: f54396fab917bc949b664f13196045d9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552246621904572, guid: f54396fab917bc949b664f13196045d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1793341278172164, guid: f54396fab917bc949b664f13196045d9, type: 3}
       propertyPath: m_Name
       value: vz03_ white
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895404843139886, guid: f54396fab917bc949b664f13196045d9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895404843139886, guid: f54396fab917bc949b664f13196045d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4828963811652146, guid: f54396fab917bc949b664f13196045d9, type: 3}
       propertyPath: m_RootOrder
