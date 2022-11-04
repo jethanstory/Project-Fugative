@@ -2209,7 +2209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675021820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 457.13632, y: 53.15, z: 388.277}
+  m_LocalPosition: {x: 457.13632, y: 34.62, z: 388.277}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3277,7 +3277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179101693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 494.8, y: 31.16, z: 828.31}
+  m_LocalPosition: {x: 457.1, y: 46.82, z: 710.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1845749543}
@@ -3334,8 +3334,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 5
-  m_BaseOffset: 3
+  m_Height: 10
+  m_BaseOffset: 10
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!135 &1179101698
@@ -5117,7 +5117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855846539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 516.26, y: 64.33, z: 390.6}
+  m_LocalPosition: {x: 516.26, y: 42.256, z: 390.6}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1898542068}
@@ -5454,6 +5454,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723699701}
     m_Modifications:
+    - target: {fileID: 130486, guid: a22c9e7ef50fc764da43060141ad70cb, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 130486, guid: a22c9e7ef50fc764da43060141ad70cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 470920, guid: a22c9e7ef50fc764da43060141ad70cb, type: 3}
       propertyPath: m_RootOrder
       value: 2
