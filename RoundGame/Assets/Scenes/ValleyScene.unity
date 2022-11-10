@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 266f8514ab114a44a9cdc3d79cb35deb, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8be19eecc1af88e41b609247689ee1a0, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11988709, g: 0.12781107, b: 0.1300202, a: 1}
+  m_IndirectSpecularColor: {r: 0.07217636, g: 0.0675202, b: 0.06565483, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -926,7 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 9cd01dd5215a9574397da9cfae709afd, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 6598efb22e66e5f44867fac5ad3723a1, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
@@ -1594,7 +1594,7 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: a4d235f84db130042b6d979c5affa2fc, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 1000
+  m_TreeBillboardDistance: 2000
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
@@ -3913,7 +3913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &968305152
 Light:
   m_ObjectHideFlags: 0
@@ -4389,7 +4389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1073595182
 Light:
   m_ObjectHideFlags: 0
